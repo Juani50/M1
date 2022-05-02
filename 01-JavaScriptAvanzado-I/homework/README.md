@@ -8,9 +8,10 @@
 Determiná que será impreso en la consola, sin ejecutar el código.
 
 > Investiga cuál es la diferencia entre declarar una variable con `var` y directamente asignarle un valor.
+// 
 
 ```javascript
-x = 1;
+x = 1; 
 var a = 5;
 var b = 10;
 var c = function(a, b, c) {
@@ -30,6 +31,7 @@ c(8,9,10);
 console.log(b);
 console.log(x);
 ```
+// 10, , 5, 5, 
 
 ```javascript
 console.log(bar);
@@ -39,7 +41,7 @@ function foo() { console.log('Hola!'); }
 var bar = 1;
 baz = 2;
 ```
-
+// solo devolveria hola! y undefined 
 ```javascript
 var instructor = "Tony";
 if(true) {
@@ -47,7 +49,7 @@ if(true) {
 }
 console.log(instructor);
 ```
-
+Franco 
 ```javascript
 var instructor = "Tony";
 console.log(instructor);
@@ -59,7 +61,7 @@ console.log(instructor);
 })();
 console.log(instructor);
 ```
-
+tony, franco, tony
 ```javascript
 var instructor = "Tony";
 let pm = "Franco";
@@ -72,27 +74,28 @@ if (true) {
 console.log(instructor);
 console.log(pm);
 ```
+// the flash, reverse flash, the flash, franco 
 ### Coerción de Datos
 
 ¿Cuál crees que será el resultado de la ejecución de estas operaciones?:
 
 ```javascript
-6 / "3"
-"2" * "3"
-4 + 5 + "px"
-"$" + 4 + 5
-"4" - 2
-"4px" - 2
-7 / 0
-{}[0]
-parseInt("09")
-5 && 2
-2 && 5
-5 || 0
-0 || 5
-[3]+[3]-[10]
-3>2>1
-[] == ![]
+6 / "3" // 2
+"2" * "3"// 6
+4 + 5 + "px"// "9px"
+"$" + 4 + 5 // "45$"
+"4" - 2// 2
+"4px" - 2// NaN
+7 / 0// infinito 
+{}[0]// 0
+parseInt("09")//9
+5 && 2//2
+2 && 5//5
+5 || 0//5
+0 || 5//5
+[3]+[3]-[10]//23
+3>2>1//false
+[] == ![]//true 
 ```
 
 > Si te quedó alguna duda repasá con [este artículo](http://javascript.info/tutorial/object-conversion).
